@@ -1,0 +1,3 @@
+ul.faq input[type=radio]:checked +div{
+    display: block;
+}

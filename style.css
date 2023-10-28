@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-image: linear-gradient(45deg, rgba(0,0,0,0.3) 50%,rgba(0,0,0,0.6) 100%),url('https://springboard-cdn.appadvice.com/wp-content/appadvice-v2-media/2016/11/Netflix-background_860c8ece6b34fb4f43af02255ca8f225.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .sing {
+    width: 30%;
+    max-width: 373px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+
+   
+}
+
+.sing .s {
+    width: 80%;
+    
+}
+
+.sing h2 {
+    color: white;
+    padding: 10px;
+}
+
+form input {
+    border: none;
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(58, 56, 56);
+    margin: 10px 0;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 15px;
+    color: white;
+
+}
+
+form input::placeholder {
+    color: rgb(200, 205, 209);
+}
+
+form button {
+    width: 100%;
+    border: none;
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: crimson;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form .login-info {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.ch input[type='checkbox'] {
+    width: 10px;
+    height: 100%;
+    transform: translateY(2px);
+    accent-color: white;
+
+    
+
+}
+
+.info {
+    margin-top: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info .sing-now {
+    font-weight: 700;
+}
+
+.info p:nth-child(2) {
+    font-size: 12px;
+   
+}
+
+.info p:nth-child(2) a {
+    color: rgba(24, 24, 224, 0.991);
+}
+
+
+header img{
+    width: 120px;
+    position: absolute;
+    top: 2%;
+    left: 20%;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width:1200px) {
+
+    .main .sing {
+        width: 40%;
+        
+    }
+    .sing .s{
+        width: 100%;
+    }
+
+    .info p:nth-child(2) {
+        font-size: 1.6vw;
+        line-height: 19px;
+    }
+}
+
+
+@media (max-width:800px) {
+
+    .main .sing {
+        width: 50%;
+    }
+
+    .info p:nth-child(2) {
+        font-size: 1.8vw;
+        line-height: 17px;
+    }
+}
+
+@media (max-width:500px) {
+
+    .main .sing {
+        width: 100%;
+        padding: 40px 5px;
+    }
+
+    .info p:nth-child(2) {
+        font-size: 2.8vw;
+        line-height: 14px;
+    }
+
+    header img{
+        width: 80px;
+        left: 10%;
+        margin-bottom: 20px;
+    }
+}
